@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://legendary-train-5vxqr556gprx2vrr4-5500.app.github.dev/code2-3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <!--
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Coding Challenge 3
+   
+   Author:WILL ROBINS
+   Date:09/03/2026
+   Filename: code2-3.html
+   -->
+   
+   <title>Coding Challenge 2-3</title>
+<link rel="stylesheet" href="./index_files/code2-3.css">
+<link rel="stylesheet" href="./index_files/code2-3_layout.css">
+</head>
+<body>
+
+   <article>
+      <h1>The School of Athens</h1>
+      <h2>By Raphael</h2>
+      <img src="./index_files/code2-3_img.png" alt="School of Athens">
+      <p>The <em>School of Athens</em>, considered by many to be Raphael's
+         masterwork, is a fresco representing the greatest minds of
+         classical antiquity, gathered together to share their 
+         thoughts and beliefs. The fresco was painted between 1509 and 1511
+         as a part of a commission to decorate the rooms of the 
+         Stanze di Raffaello in the Apostolic Palace in the Vatican.</p>
+      <p>The two center figures, Aristotle and Plato, are key philosophers
+         in the development of Western thought. Plato, with his belief in a
+         higher realty, points skyward. Within his hands, Plato holds 
+         the <cite>Timaeus</cite> — one of Plato's famous dialogs on
+         the nature of reality and time. In contrast, Aristotle points 
+         downward, indicating that he is grounded in a reality that can be
+         experienced by sight and touch. In his hands, he holds his
+         book <cite>Ethics</cite>, a tome that emphasizes the need for
+         justice, friendship, and ethical government.
+      </p>
+      <p>Other famous philosophers fill the pseudo-architecture. In many cases,
+         when Raphael did not have classical images to draw upon, he used
+         images of contemporary figures to stand in for their classical
+         counterparts. Look for a portrait of Michelangelo on the left-forward
+         steps, his thoughts concerned with sketching and art.</p>
+   </article>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
